@@ -19,15 +19,16 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  favicon: /favicon.ico
+  #small: /images/favicon-16x16-next.png
+  #medium: /images/favicon-32x32-next.png
+  #apple_touch_icon: /images/apple-touch-icon-next.png
+  #safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Homulilly"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -40,7 +41,7 @@ footer:
   #since: 2015
 
   # Icon between year and copyright info.
-  icon: user
+  icon: heart
 
   # If not defined, will be used `author` from Hexo main config.
   copyright:
@@ -85,9 +86,9 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -103,8 +104,8 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
+#scheme: Muse
+scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
@@ -130,10 +131,16 @@ scheme: Muse
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
 
+social: 
+  +Aroes Litvyak: https://plus.google.com/+AroesLitvyak || google-plus-square
+  PSN Trophy: http://psnprofiles.com/Aroes_Litvyak || trophy
+
 social_icons:
   enable: true
   icons_only: false
   transition: false
+
+
 
 # Blog rolls
 links_icon: link
@@ -143,17 +150,28 @@ links_layout: block
 #links:
   #Title: http://example.com/
 
+links_title: Links
+links_layout: inline
+links:
+  西园: http://xiyuan.lu
+  凤凰卷: https://blog.phoenixlzx.com
+  CEE: http://cee.moe
+  HY: https://blog.kiseki.moe
+  小成博客: https://atk.me
+  Anjoy博客: http://atxiu.cn
+
+
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
   enable: true
 
   # Automatically add list number to toc.
-  number: true
+  number: flase
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
@@ -174,7 +192,7 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  display: hide
   #display: always
   #display: hide
   #display: remove
@@ -197,7 +215,7 @@ sidebar:
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 # Automatically saving scroll position on each post/page in cookies.
 save_scroll: false
@@ -285,10 +303,10 @@ highlight_theme: normal
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
-  host:
+  host: //fonts.cat.net
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -298,7 +316,7 @@ font:
   # Global font settings used on <body> element.
   global:
     external: true
-    family: Lato
+    family: Ubuntu
     size:
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
@@ -318,13 +336,13 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family:
+    family: Lato
     size:
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: Source Code Pro
     size:
 
 
