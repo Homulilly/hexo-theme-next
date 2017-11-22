@@ -26,7 +26,7 @@
     
     <div class="comments" id="comments">
     <div style="text-align:center;">
-        <button class="btn" id="load-disqus" onclick="disqus.load();">加载 Disqus 评论</button>
+        <button class="disbtn" id="load-disqus" onclick="disqus.load();">加载 Disqus 评论</button>
     </div>
       <div id="disqus_thread">
         <noscript>
